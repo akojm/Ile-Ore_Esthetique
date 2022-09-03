@@ -105,7 +105,7 @@ header{
 main{  
    section.home{
     display: flex;
-    background:url("./asset/img/Medecine-Esthetique.jpeg");
+    background:url("/asset/img/Medecine-Esthetique.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:55%;
@@ -319,7 +319,7 @@ main{
             margin: 10px;
             
             &.item_beaute{
-                background:url("./asset/img/beautiful-girl-with-colorful-makeup.jpg");
+                background:url("/asset/img/beautiful-girl-with-colorful-makeup.jpg");
                   background-size: cover;
                   background-repeat:no-repeat ;
                  
