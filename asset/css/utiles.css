@@ -1,0 +1,49 @@
+/* Boites flexibles */
+.flex{
+    display: flex;
+}
+/* Positionnement des boites */
+.row{
+    flex-direction: row;
+}
+.row{
+    flex-direction: column;
+}
+.absolute {
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.fixe{
+    position: fixed;
+}
+/* Positionnements des elements sur la ligne */
+.wrap{
+    flex-wrap: wrap;
+}
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+/* Centrer les boites*/
+.center-h{
+    justify-content: center;
+}
+.center-V{
+    justify-items: center;
+}
+
+/* Espace entre les boites */
+.gap-5{
+    gap: 5px;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-15{
+    gap: 15px;
+}
+.gap-20{
+    gap: 20px;
+}

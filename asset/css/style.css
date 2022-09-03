@@ -1,0 +1,890 @@
+@font-face {
+  font-family: primary;
+  src: url(/asset/font/WorkSans-Regular.ttf);
+}
+@font-face {
+  font-family: secondary;
+  src: url(/asset/font/Unna-Regular.ttf);
+}
+@font-face {
+  font-family: special;
+  src: url(/asset/font/MikelaLight.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: principal;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+header .header_site .header_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header .header_site .header_content .logo_site {
+  width: 130px;
+}
+header .header_site .header_content ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+  margin: 0px;
+}
+header .header_site .header_content ul li {
+  list-style: none;
+  padding: 35px 16px;
+}
+header .header_site .header_content ul li a {
+  font-family: primary;
+  font-size: 15px;
+  color: #404041;
+  font-weight: bold;
+  text-decoration: none;
+}
+header .header_site .header_content ul li a:hover {
+  color: #ba716d;
+  transition: 0.5s;
+}
+header .header_site .header_content .header_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header_site .header_content .header_button a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  color: #404041;
+  text-decoration: none;
+  padding: 26px 16px;
+}
+header .header_site .header_content .header_button a img {
+  width: 1.5rem;
+}
+header .header_site .header_content .header_button a span {
+  font-family: primary;
+  font-weight: bold;
+  font-size: 0.6rem;
+  color: #404041;
+  padding: 3px 0px 0px;
+}
+header .header_site .header_content .header_button a span:hover {
+  color: #ba716d;
+  transition: 0.5s;
+}
+
+main section.home {
+  display: flex;
+  background: url("/asset/img/Medecine-Esthetique.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 55%;
+  background-color: #464646;
+  width: 100%;
+  min-height: 100vh;
+}
+main section.home .home_content {
+  min-height: 350px;
+}
+main section.home .home_content .arrow_icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(50%, -50%);
+}
+main section.home .home_content .arrow_icon img {
+  width: 100%;
+}
+main section.home .home_content .slogan_content .slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+main section.home .home_content .slogan_content .slogan h1 {
+  font-family: special;
+  color: #404041;
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 58px;
+  letter-spacing: 3px;
+}
+main section.home .home_content .slogan_content .slogan button {
+  background-color: #b66662;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 25px;
+}
+main section.home .home_content .slogan_content .slogan button a {
+  font-family: primary;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+}
+main section.home .home_content .slogan_content .slogan button:hover {
+  background-color: #d2c8cd;
+  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
+  font-weight: bolder;
+}
+main section.home .home_content .slogan_content .slogan button:hover a {
+  color: #404041;
+  font-weight: bold;
+}
+main section.conseil {
+  min-height: 350px;
+  margin-top: 40px;
+}
+main section.conseil .conseil_content h2 {
+  font-family: secondary;
+  font-size: 3.5rem;
+  font-weight: lighter;
+  text-align: center;
+  color: #b66662;
+  padding: 50px 0px 20px 0px;
+}
+main section.conseil .conseil_content h2::before {
+  content: " - ";
+  width: 160px;
+  color: #b66662;
+}
+main section.conseil .conseil_content h2::after {
+  content: " - ";
+  width: 60px;
+  height: 5px;
+  color: #b66662;
+}
+main section.conseil .conseil_content .conseil_items_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+main section.conseil .conseil_content .conseil_items_content h3 {
+  font-family: primary;
+  font-size: 1.5rem;
+  text-align: center;
+}
+main section.conseil .conseil_content .conseil_items_content p {
+  font-size: 0.9rem;
+}
+main section.conseil .conseil_content .conseil_items_content .univers_beaute {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 650px;
+  min-height: 180px;
+  padding: 10px 20px 10px;
+}
+main section.conseil .conseil_content .conseil_items_content .univers_coaching {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 650px;
+  min-height: 180px;
+  padding: 10px 20px 10px;
+}
+main section.conseil .conseil_content .conseil_items_content .btn-l {
+  padding: 8px 16px;
+  background-color: #b66662;
+  border: none;
+  border-radius: 5px;
+}
+main section.conseil .conseil_content .conseil_items_content .btn-l:hover {
+  background-color: #d2c8cd;
+  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
+  font-weight: bolder;
+}
+main section.conseil .conseil_content .conseil_items_content .btn-l:hover a {
+  color: #b66662;
+}
+main section.conseil .conseil_content .conseil_items_content .btn-l a {
+  font-family: primary;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+main section.beaute {
+  background-color: rgba(234, 223, 229, 0.4);
+  min-height: 650px;
+  margin-top: 40px;
+}
+main section.beaute .beaute_content h2 {
+  font-family: secondary;
+  font-size: 3.5rem;
+  font-weight: lighter;
+  text-align: center;
+  color: #b66662;
+  margin: 0px 0px 5px;
+  padding: 30px 0px;
+}
+main section.beaute .beaute_content h2::before {
+  content: " - ";
+  width: 160px;
+  color: #b66662;
+}
+main section.beaute .beaute_content h2::after {
+  content: " - ";
+  width: 60px;
+  height: 5px;
+  color: #b66662;
+}
+main section.beaute .beaute_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section.beaute .beaute_items a {
+  border-radius: 15px;
+  border: 5px solid #ffffff;
+  padding: 20px 32px;
+  text-decoration: none;
+  width: 392px;
+  height: 250px;
+  margin: 10px;
+}
+main section.beaute .beaute_items a.item_beaute {
+  background: url("/asset/img/beautiful-girl-with-colorful-makeup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main section.beaute .beaute_items a.item_soins {
+  background: url("/asset/img/man-g5aeb4e700_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main section.beaute .beaute_items a.item_massage {
+  background: url("/asset/img/alan-caishan-cU53ZFBr3lk-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main section.beaute .beaute_items a.item_mini-moi {
+  background: url("/asset/img/fernando-bacheschi-IyaOIyFh_Yg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main section.beaute .beaute_items a.item_coaching {
+  background: url("/asset/img/toner-ge5acff410_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main section.beaute .beaute_items a.item_tarifs {
+  background: url("/asset/img/tarifs & forfaits.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main section.beaute .beaute_items a:hover {
+  box-shadow: rgba(223, 188, 125, 0.6) 0px 10px 15px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
+}
+main section.beaute .beaute_items a h3 {
+  color: rgb(255, 255, 255);
+  font-family: special;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+main section.beaute .beaute_items a h3:hover {
+  color: #ba716d;
+}
+main section.beaute .beaute_items a h3 .domicile {
+  font-family: secondary;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(223, 188, 125);
+  padding-top: 5px;
+}
+main section.beaute .beaute_items a h3 .domicile li {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: special;
+}
+main section.beaute .beaute_items a h3 .domicile:hover {
+  color: rgb(255, 255, 255);
+}
+main section.professionnel {
+  min-height: 350px;
+  margin-top: 40px;
+}
+main section.professionnel h2 {
+  font-family: secondary;
+  font-size: 3.5rem;
+  font-weight: lighter;
+  text-align: center;
+  color: #b66662;
+  padding: 30px 0px 50px 0px;
+  margin: 0px 0px 8px 0px;
+}
+main section.professionnel h2::before {
+  content: " - ";
+  width: 160px;
+  color: #b66662;
+}
+main section.professionnel h2::after {
+  content: " - ";
+  width: 60px;
+  height: 5px;
+  color: #b66662;
+}
+main section.professionnel li {
+  font-family: primary;
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+main section.professionnel .professionnel_infos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+main section.professionnel .professionnel_infos .estheticienne {
+  width: 390px;
+}
+main section.professionnel .professionnel_infos .estheticienne h3 {
+  font-family: primary;
+  font-size: 1.5rem;
+  color: #404041;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: capitalize;
+}
+main section.professionnel .professionnel_infos .estheticienne .btn-l {
+  font-family: primary;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 8px 16px;
+  background-color: #b66662;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+main section.professionnel .professionnel_infos .estheticienne .btn-l:hover {
+  background-color: #d2c8cd;
+  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
+  font-weight: bolder;
+  color: #b66662;
+}
+main section.professionnel .professionnel_infos .aurelie {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50%;
+}
+main section.professionnel .professionnel_infos .aurelie img {
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main section.professionnel .professionnel_infos .aurelie img:hover {
+  background-color: #d2c8cd;
+  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
+  font-weight: bolder;
+}
+main section.professionnel .professionnel_infos .aurelie h4 {
+  font-family: primary;
+  font-size: 0.9rem;
+  color: #b66662;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  text-transform: capitalize;
+}
+main section.professionnel .professionnel_infos .coaching {
+  width: 390px;
+}
+main section.professionnel .professionnel_infos .coaching h3 {
+  font-family: primary;
+  font-size: 1.5rem;
+  color: #404041;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: capitalize;
+}
+main section.professionnel .professionnel_infos .coaching .btn-l {
+  font-family: primary;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  padding: 8px 16px;
+  background-color: #b66662;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+main section.professionnel .professionnel_infos .coaching .btn-l:hover {
+  background-color: #d2c8cd;
+  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
+  font-weight: bolder;
+  color: #b66662;
+}
+main section.pro {
+  min-height: 350px;
+  margin-top: 40px;
+}
+main section.pro .pro_content h2 {
+  font-family: secondary;
+  font-size: 3.5rem;
+  font-weight: lighter;
+  text-align: center;
+  color: #b66662;
+  padding: 30px 0px 30px 0px;
+  margin: 0px 0px 8px 0px;
+}
+main section.pro .pro_content h2::before {
+  content: " - ";
+  width: 160px;
+  color: #b66662;
+}
+main section.pro .pro_content h2::after {
+  content: " - ";
+  width: 60px;
+  height: 5px;
+  color: #b66662;
+}
+main section.pro .pro_content .pro_items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main section.pro .pro_content .pro_items .pro_picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section.pro .pro_content .pro_items .pro_picture img {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 5px solid rgba(234, 223, 229, 0.4);
+}
+main section.pro .pro_content .pro_items .pro_picture img:hover {
+  box-shadow: rgba(223, 188, 125, 0.6) 0px 10px 15px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
+}
+main section.pro .pro_content .pro_items .pro_picture h4 {
+  font-family: primary;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #b66662;
+  padding: 10px 0px;
+}
+main section.pro .pro_content .pro_items .pro_estheticienne h3 {
+  font-family: primary;
+  font-size: 1.4rem;
+  color: #404041;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: capitalize;
+  text-align: center;
+}
+main section.pro .pro_content .pro_items .pro_estheticienne .experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section.pro .pro_content .pro_items .pro_estheticienne .experience li {
+  font-family: primary;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #404041;
+}
+main section.pro .pro_content .pro_items .pro_estheticienne .btn-l {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.9em;
+  padding: 9px;
+  background-color: #b66662;
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+main section.pro .pro_content .pro_items .pro_estheticienne .btn-l:hover {
+  background-color: #d2c8cd;
+  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
+  font-weight: bolder;
+  color: #b66662;
+}
+main section.pro .pro_content .pro_items .pro_coaching img {
+  width: 280px;
+  height: 260px;
+  border-radius: 15px;
+  border: 5px solid rgba(234, 223, 229, 0.4);
+}
+main section.pro .pro_content .pro_items .pro_coaching h4 {
+  font-family: primary;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #b66662;
+  padding: 10px 0px;
+}
+main section.pro .pro_content .pro_items .pro_coaching h3 {
+  font-family: primary;
+  font-size: 1.4rem;
+  color: #404041;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: capitalize;
+  text-align: center;
+}
+main section.pro .pro_content .pro_items .pro_coaching .experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section.pro .pro_content .pro_items .pro_coaching .experience li {
+  font-family: primary;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #404041;
+}
+main section.pro .pro_content .pro_items .pro_coaching .btn-l {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.9em;
+  padding: 9px;
+  background-color: #b66662;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+}
+main section.pro .pro_content .pro_items .pro_coaching .btn-l:hover {
+  background-color: #d2c8cd;
+  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
+  font-weight: bolder;
+  color: #b66662;
+}
+main section.client {
+  min-height: 350px;
+  margin-top: 40px;
+}
+main section.client .client_content {
+  background-color: rgba(234, 223, 229, 0.2);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+}
+main section.client .confiance h2 {
+  font-family: secondary;
+  font-size: 3.5rem;
+  font-weight: lighter;
+  color: #b66662;
+  padding: 30px 0px 10px;
+  margin: 0px 0px 8px 0px;
+  text-align: center;
+}
+main section.client .confiance h2::before {
+  content: " - ";
+  width: 160px;
+  color: #b66662;
+}
+main section.client .confiance h2::after {
+  content: " - ";
+  width: 60px;
+  height: 5px;
+  color: #b66662;
+}
+main section.client .confiance p {
+  font-family: special;
+  font-weight: lighter;
+  font-size: 1.8rem;
+}
+main section.client .confiance .btn-l {
+  font-family: primary;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 8px 16px;
+  background-color: #b66662;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+main section.client .confiance .btn-l:hover {
+  background-color: #d2c8cd;
+  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
+  font-weight: bolder;
+  color: #b66662;
+}
+main section.client .slider {
+  display: flex;
+  overflow: hidden;
+  margin-top: 20px;
+}
+main section.client .slider .slide-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  -webkit-animation: scroll 60s linear infinite;
+  animation: scroll 60s linear infinite;
+  width: 3500px;
+  border: red;
+}
+main section.client .slider .slide-track .slide {
+  height: 300px;
+  width: 250px;
+}
+main section.cadeaux_shopping {
+  min-height: 350px;
+  margin-top: 40px;
+}
+main section.cadeaux_shopping h2 {
+  font-family: secondary;
+  font-size: 3.5rem;
+  font-weight: lighter;
+  color: #b66662;
+  padding: 40px 0px 10px;
+  margin: 0px 0px 8px 0px;
+  text-align: center;
+}
+main section.cadeaux_shopping h2::before {
+  content: " - ";
+  width: 160px;
+  color: #b66662;
+}
+main section.cadeaux_shopping h2::after {
+  content: " - ";
+  width: 60px;
+  height: 5px;
+  color: #b66662;
+}
+main section.cadeaux_shopping p {
+  font-family: secondary;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 20px 0px;
+}
+main section.cadeaux_shopping .cadeaux_shopping_content .cadeaux_shopping_items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+main section.cadeaux_shopping .cadeaux_shopping_content .cadeaux_shopping_items a {
+  width: 395px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 20px 32px;
+  text-decoration: none;
+}
+main section.cadeaux_shopping .cadeaux_shopping_content .cadeaux_shopping_items a.cadeaux {
+  background: url("/asset/img/carte-cadeaux.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main section.cadeaux_shopping .cadeaux_shopping_content .cadeaux_shopping_items a.shopping {
+  background: url("/asset/img/shopping.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main section.cadeaux_shopping .cadeaux_shopping_content .cadeaux_shopping_items h3 {
+  color: rgb(255, 255, 255);
+  font-family: special;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+main section.cadeaux_shopping .cadeaux_shopping_content .cadeaux_shopping_items h3:hover {
+  color: #ba716d;
+}
+main section.cadeaux_shopping .cadeaux_shopping_content .cadeaux_shopping_items h3 .info_item {
+  font-family: secondary;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(223, 188, 125);
+  padding-top: 5px;
+}
+main section.cadeaux_shopping .cadeaux_shopping_content .cadeaux_shopping_items h3 .info_item:hover {
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  background-color: rgba(234, 223, 229, 0.4);
+  min-height: 200px;
+  margin-top: 50px;
+}
+footer .footer_content {
+  padding: 40px 0px;
+}
+footer .footer_content .footer_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+footer .footer_content .footer_header .footer_logo {
+  width: 250px;
+}
+footer .footer_content .footer_header .footer_logo img {
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+footer .footer_content .footer_header .footer_univers {
+  padding: 10px 0px;
+  text-transform: capitalize;
+}
+footer .footer_content .footer_header .footer_univers h5 {
+  font-family: primary;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+footer .footer_content .footer_header .footer_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+footer .footer_content .footer_header .footer_nav a {
+  font-family: primary;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  padding: 4px 5px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+footer .footer_content .footer_header .footer_cadeaux_shopping {
+  padding: 10px 0px;
+  text-transform: capitalize;
+}
+footer .footer_content .footer_header .footer_cadeaux_shopping h5 {
+  font-family: primary;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+footer .footer_content .footer_header .footer_cadeaux_shopping .footer_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_content .footer_header .footer_cadeaux_shopping .footer_item a {
+  font-family: primary;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  padding: 4px 5px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+footer .footer_content .footer_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  text-transform: capitalize;
+}
+footer .footer_content .footer_contact .contatez_nous {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_content .footer_contact .contatez_nous h5 {
+  font-family: primary;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+footer .footer_content .footer_contact .contatez_nous a {
+  font-family: primary;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  padding: 4px 5px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+footer .footer_content .footer_contact .suivez-nous {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer_content .footer_contact .suivez-nous h5 {
+  font-family: primary;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+footer .footer_content .footer_contact .suivez-nous a {
+  font-family: primary;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  padding: 4px 5px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+footer .footer_content .footer_contact .suivez-nous a i {
+  margin: 8px 3px;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+footer .footer_content .footer_mentions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_content .footer_mentions a {
+  font-family: primary;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  padding: 20px 50px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}/*# sourceMappingURL=style.css.map */
