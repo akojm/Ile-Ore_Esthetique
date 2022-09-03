@@ -105,7 +105,7 @@ header{
 main{  
    section.home{
     display: flex;
-    background:url("/asset/img/Medecine-Esthetique.jpeg");
+    background:url("./asset/img/Medecine-Esthetique.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:55%;
@@ -319,26 +319,26 @@ main{
             margin: 10px;
             
             &.item_beaute{
-                background:url("/asset/img/beautiful-girl-with-colorful-makeup.jpg");
+                background:url("./asset/img/beautiful-girl-with-colorful-makeup.jpg");
                   background-size: cover;
                   background-repeat:no-repeat ;
                  
                   
               }
             &.item_soins{
-                background:url("/asset/img/man-g5aeb4e700_1920.jpg");
+                background:url("./asset/img/man-g5aeb4e700_1920.jpg");
                   background-size: cover;
                   background-repeat:no-repeat ;
                  
               }
             &.item_massage{
-                background:url("/asset/img/alan-caishan-cU53ZFBr3lk-unsplash.jpg");
+                background:url("./asset/img/alan-caishan-cU53ZFBr3lk-unsplash.jpg");
                   background-size: cover;
                   background-repeat:no-repeat ;
                
               }
             &.item_mini-moi{
-                background:url("/asset/img/fernando-bacheschi-IyaOIyFh_Yg-unsplash.jpg");
+                background:url("./asset/img/fernando-bacheschi-IyaOIyFh_Yg-unsplash.jpg");
                   background-size: cover;
                   background-repeat:no-repeat ;
               }
@@ -349,7 +349,7 @@ main{
               }
             
             &.item_tarifs{
-                background:url("/asset/img/tarifs\ &\ forfaits.jpg");
+                background:url("./asset/img/tarifs\ &\ forfaits.jpg");
                   background-size: cover;
                   background-repeat:no-repeat ;
               }
@@ -395,137 +395,6 @@ main{
         }
 
        }
-    }
-    section.professionnel{
-        min-height: 350px;
-        margin-top: 40px;
-    
-            h2{ 
-                font-family: secondary;
-                font-size: 3.5rem;
-                font-weight:lighter;
-                text-align:center;
-                color: #b66662;
-                padding: 30px 0px 50px 0px; 
-                margin: 0px 0px 8px 0px;  
-                
-                &::before{
-                    content: ' - ';
-                    width: 160px;
-                    color: #b66662;
-                }
-                
-                &::after{
-                    content: ' - ';
-                    width: 60px;
-                    height: 5px;
-                    color: #b66662;
-                }
-            }
-
-            li{
-                font-family: primary;
-                font-weight:lighter;
-                font-size: 0.9rem;
-            }
-        .professionnel_infos{
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-                 .estheticienne{
-                    width: 390px;
-
-                 h3{
-                        font-family: primary;
-                        font-size: 1.5rem;
-                        color: #404041;  
-                        font-weight:bold;
-                        padding: 10px;
-                        text-transform: capitalize;   
-                 }
-                    
-                .btn-l{
-                    font-family: primary;
-                    font-size: 1rem;
-                    letter-spacing: 0.1rem;
-                     padding: 8px 16px;
-                     background-color: #b66662;
-                     color: #ffffff;
-                     text-decoration: none;
-                     border: none;
-                     border-radius: 5px;
-                     margin-top: 5px;
-                     
-                     &:hover{
-                        background-color:#d2c8cd;
-                        box-shadow: rgba(223, 188, 125,0.6) 0px 5px 10px -3px,  rgba(223, 188, 125,0.6) 0px 4px 6px -2px;
-                       font-weight: bolder;  
-                       color: #b66662;    
-                    }    
-                }
-            }
-           
-            .aurelie{
-                width: 390px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                border-radius: 50%;
-
-                img{ width: 100%;
-                    height: 250px;
-                    border-radius: 50%;
-                    cursor: pointer;
-                    
-                    &:hover{
-                        background-color:#d2c8cd;
-                        box-shadow: rgba(223, 188, 125,0.6) 0px 5px 10px -3px,  rgba(223, 188, 125,0.6) 0px 4px 6px -2px;
-                       font-weight: bolder;
-                }
-                    
-                    }
-                    h4{
-                        font-family: primary;
-                        font-size: 0.9rem;
-                        color: #b66662;  
-                        font-weight:bold;
-                        text-align: center;
-                        padding: 10px;
-                        text-transform: capitalize;   
-            }
-         
-        }  
-        .coaching{
-            width: 390px;
-            h3{
-                font-family: primary;
-                font-size: 1.5rem;
-                color: #404041;  
-                font-weight:bold;
-                padding: 10px;
-                text-transform: capitalize;   
-         }
-            .btn-l{
-                font-family: primary;
-                font-size: 0.9rem;
-                letter-spacing: 0.1rem;
-                 padding: 8px 16px;
-                 background-color: #b66662;
-                 color: #ffffff;
-                 text-decoration: none;
-                 border: none;
-                 border-radius: 5px;
-                 margin-top: 5px;
-                 
-                 &:hover{
-                    background-color:#d2c8cd;
-                    box-shadow: rgba(223, 188, 125,0.6) 0px 5px 10px -3px,  rgba(223, 188, 125,0.6) 0px 4px 6px -2px;
-                   font-weight: bolder;  
-                   color: #b66662;    
-                }    
-            }
-        }
-        }       
     }
     section.pro{
          min-height: 350px;
