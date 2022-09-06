@@ -86,7 +86,7 @@ header .header_site .header_content .header_button a span:hover {
 
 main section.home {
   display: flex;
-  background: url("/asset/img/Medecine-Esthetique.jpeg");
+  background: url("../img/Medecine-Esthetique.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55%;
@@ -265,32 +265,32 @@ main section.beaute .beaute_items a {
   margin: 10px;
 }
 main section.beaute .beaute_items a.item_beaute {
-  background: url("/asset/img/beautiful-girl-with-colorful-makeup.jpg");
+  background: url("../img/beautiful-girl-with-colorful-makeup.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 main section.beaute .beaute_items a.item_soins {
-  background: url("/asset/img/man-g5aeb4e700_1920.jpg");
+  background: url("../img/man-g5aeb4e700_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 main section.beaute .beaute_items a.item_massage {
-  background: url("/asset/img/alan-caishan-cU53ZFBr3lk-unsplash.jpg");
+  background: url("../img/alan-caishan-cU53ZFBr3lk-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 main section.beaute .beaute_items a.item_mini-moi {
-  background: url("/asset/img/fernando-bacheschi-IyaOIyFh_Yg-unsplash.jpg");
+  background: url("../img/fernando-bacheschi-IyaOIyFh_Yg-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 main section.beaute .beaute_items a.item_coaching {
-  background: url("/asset/img/toner-ge5acff410_1920.jpg");
+  background: url("../img/toner-ge5acff410_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 main section.beaute .beaute_items a.item_tarifs {
-  background: url("/asset/img/tarifs & forfaits.jpg");
+  background: url("../img/tarifs & forfaits.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -701,12 +701,12 @@ main section.cadeaux_shopping .cadeaux_shopping_content .cadeaux_shopping_items 
   text-decoration: none;
 }
 main section.cadeaux_shopping .cadeaux_shopping_content .cadeaux_shopping_items a.cadeaux {
-  background: url("/asset/img/carte-cadeaux.jpg");
+  background: url("../img/carte-cadeaux.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 main section.cadeaux_shopping .cadeaux_shopping_content .cadeaux_shopping_items a.shopping {
-  background: url("/asset/img/shopping.jpg");
+  background: url("../img/shopping.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
