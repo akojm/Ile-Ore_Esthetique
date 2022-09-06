@@ -1,14 +1,14 @@
 @font-face {
   font-family: primary;
-  src: url(/asset/font/WorkSans-Regular.ttf);
+  src: url(../font/WorkSans-Regular.ttf);
 }
 @font-face {
   font-family: secondary;
-  src: url(/asset/font/Unna-Regular.ttf);
+  src: url(../font/Unna-Regular.ttf);
 }
 @font-face {
   font-family: special;
-  src: url(/asset/font/MikelaLight.ttf);
+  src: url(../font/MikelaLight.ttf);
 }
 body {
   margin: 0;
