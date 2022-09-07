@@ -8,8 +8,12 @@
 }
 @font-face {
   font-family: special;
-  src: url(../font/MikelaLight.ttf);
+  src: url(../asset/font/MikelaLight.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -23,6 +27,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  z-index: 200;
 }
 header .header_site .header_content {
   display: flex;
@@ -43,10 +48,10 @@ header .header_site .header_content ul {
 header .header_site .header_content ul li {
   list-style: none;
   padding: 35px 16px;
+  font-size: 1rem;
 }
 header .header_site .header_content ul li a {
   font-family: primary;
-  font-size: 15px;
   color: #404041;
   font-weight: bold;
   text-decoration: none;
@@ -86,7 +91,7 @@ header .header_site .header_content .header_button a span:hover {
 
 main section.home {
   display: flex;
-  background: url("../img/Medecine-Esthetique.jpeg");
+  background: url(../img/Medecine-Esthetique.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55%;
@@ -323,125 +328,6 @@ main section.beaute .beaute_items a h3 .domicile li {
 main section.beaute .beaute_items a h3 .domicile:hover {
   color: rgb(255, 255, 255);
 }
-main section.professionnel {
-  min-height: 350px;
-  margin-top: 40px;
-}
-main section.professionnel h2 {
-  font-family: secondary;
-  font-size: 3.5rem;
-  font-weight: lighter;
-  text-align: center;
-  color: #b66662;
-  padding: 30px 0px 50px 0px;
-  margin: 0px 0px 8px 0px;
-}
-main section.professionnel h2::before {
-  content: " - ";
-  width: 160px;
-  color: #b66662;
-}
-main section.professionnel h2::after {
-  content: " - ";
-  width: 60px;
-  height: 5px;
-  color: #b66662;
-}
-main section.professionnel li {
-  font-family: primary;
-  font-weight: lighter;
-  font-size: 0.9rem;
-}
-main section.professionnel .professionnel_infos {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-main section.professionnel .professionnel_infos .estheticienne {
-  width: 390px;
-}
-main section.professionnel .professionnel_infos .estheticienne h3 {
-  font-family: primary;
-  font-size: 1.5rem;
-  color: #404041;
-  font-weight: bold;
-  padding: 10px;
-  text-transform: capitalize;
-}
-main section.professionnel .professionnel_infos .estheticienne .btn-l {
-  font-family: primary;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  padding: 8px 16px;
-  background-color: #b66662;
-  color: #ffffff;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  margin-top: 5px;
-}
-main section.professionnel .professionnel_infos .estheticienne .btn-l:hover {
-  background-color: #d2c8cd;
-  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
-  font-weight: bolder;
-  color: #b66662;
-}
-main section.professionnel .professionnel_infos .aurelie {
-  width: 390px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 50%;
-}
-main section.professionnel .professionnel_infos .aurelie img {
-  width: 100%;
-  height: 250px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-main section.professionnel .professionnel_infos .aurelie img:hover {
-  background-color: #d2c8cd;
-  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
-  font-weight: bolder;
-}
-main section.professionnel .professionnel_infos .aurelie h4 {
-  font-family: primary;
-  font-size: 0.9rem;
-  color: #b66662;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-  text-transform: capitalize;
-}
-main section.professionnel .professionnel_infos .coaching {
-  width: 390px;
-}
-main section.professionnel .professionnel_infos .coaching h3 {
-  font-family: primary;
-  font-size: 1.5rem;
-  color: #404041;
-  font-weight: bold;
-  padding: 10px;
-  text-transform: capitalize;
-}
-main section.professionnel .professionnel_infos .coaching .btn-l {
-  font-family: primary;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-  padding: 8px 16px;
-  background-color: #b66662;
-  color: #ffffff;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  margin-top: 5px;
-}
-main section.professionnel .professionnel_infos .coaching .btn-l:hover {
-  background-color: #d2c8cd;
-  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
-  font-weight: bolder;
-  color: #b66662;
-}
 main section.pro {
   min-height: 350px;
   margin-top: 40px;
@@ -641,6 +527,7 @@ main section.client .slider {
   display: flex;
   overflow: hidden;
   margin-top: 20px;
+  z-index: 100;
 }
 main section.client .slider .slide-track {
   display: flex;
@@ -753,26 +640,63 @@ footer .footer_content .footer_header .footer_logo img {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 footer .footer_content .footer_header .footer_univers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px 0px;
   text-transform: capitalize;
 }
 footer .footer_content .footer_header .footer_univers h5 {
+  text-align: center;
   font-family: primary;
   font-weight: bold;
   color: rgb(0, 0, 0);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
-footer .footer_content .footer_header .footer_nav {
+footer .footer_content .footer_header .footer_univers ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
+  padding: 0;
 }
-footer .footer_content .footer_header .footer_nav a {
+footer .footer_content .footer_header .footer_univers ul a {
   font-family: primary;
   color: #000000;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  padding: 4px 5px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+footer .footer_content .footer_header .conseil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  text-transform: capitalize;
+}
+footer .footer_content .footer_header .conseil h5 {
+  font-family: primary;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+footer .footer_content .footer_header .conseil ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 0;
+}
+footer .footer_content .footer_header .conseil ul a {
+  font-family: primary;
+  color: #000000;
+  font-size: 0.8rem;
   font-weight: lighter;
   padding: 4px 5px;
   -webkit-text-decoration: none;
@@ -786,18 +710,20 @@ footer .footer_content .footer_header .footer_cadeaux_shopping h5 {
   font-family: primary;
   font-weight: bold;
   color: rgb(0, 0, 0);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
-footer .footer_content .footer_header .footer_cadeaux_shopping .footer_item {
+footer .footer_content .footer_header .footer_cadeaux_shopping ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-transform: capitalize;
+  padding: 0;
 }
-footer .footer_content .footer_header .footer_cadeaux_shopping .footer_item a {
+footer .footer_content .footer_header .footer_cadeaux_shopping ul a {
   font-family: primary;
   color: #000000;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: lighter;
   padding: 4px 5px;
   -webkit-text-decoration: none;
@@ -811,22 +737,25 @@ footer .footer_content .footer_contact {
   padding: 10px 0px;
   text-transform: capitalize;
 }
-footer .footer_content .footer_contact .contatez_nous {
+footer .footer_content .footer_contact h5 {
+  text-align: center;
+  font-family: primary;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+footer .footer_content .footer_contact ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-transform: capitalize;
+  padding: 0;
 }
-footer .footer_content .footer_contact .contatez_nous h5 {
-  font-family: primary;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
-  font-size: 1.2rem;
-}
-footer .footer_content .footer_contact .contatez_nous a {
+footer .footer_content .footer_contact ul a {
   font-family: primary;
   color: #000000;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: lighter;
   padding: 4px 5px;
   -webkit-text-decoration: none;
@@ -834,28 +763,33 @@ footer .footer_content .footer_contact .contatez_nous a {
 }
 footer .footer_content .footer_contact .suivez-nous {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 footer .footer_content .footer_contact .suivez-nous h5 {
+  text-align: center;
   font-family: primary;
   font-weight: bold;
   color: rgb(0, 0, 0);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
-footer .footer_content .footer_contact .suivez-nous a {
+footer .footer_content .footer_contact .suivez-nous ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 0;
+}
+footer .footer_content .footer_contact .suivez-nous ul a {
   font-family: primary;
   color: #000000;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   padding: 4px 5px;
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-footer .footer_content .footer_contact .suivez-nous a i {
-  margin: 8px 3px;
-  font-size: 1.5rem;
-  color: rgb(0, 0, 0);
 }
 footer .footer_content .footer_mentions {
   display: flex;
@@ -887,4 +821,4 @@ footer .footer_content .footer_mentions a {
   100% {
     transform: translateX(-1750px);
   }
-}
+}/*# sourceMappingURL=style.css.map */

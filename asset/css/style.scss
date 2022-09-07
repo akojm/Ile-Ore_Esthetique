@@ -12,7 +12,7 @@
 }
 @font-face {
     font-family: special;
-    src: url(/asset/font/MikelaLight.ttf);
+    src: url(../asset/font/MikelaLight.ttf);
 }
 
 html{
@@ -32,6 +32,8 @@ header{
     position:-webkit-sticky; 
     position:sticky;
     top: 0px;
+    z-index: 200;
+    
    .header_site{
     .header_content{
         display: flex;
@@ -51,11 +53,10 @@ header{
             li{
                 list-style: none; 
                 padding: 35px 16px; 
-               
+                font-size: 1rem;
                 
                 a{
                     font-family: primary;
-                    font-size: 15px;
                     color:#404041;
                     font-weight:bold;
                     text-decoration: none;
@@ -85,8 +86,7 @@ header{
                 img{
                     width: 1.5rem;    
 
-        }
-                
+        }    
                 span{
                    font-family: primary;
                    font-weight: bold;
@@ -432,7 +432,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+   
         .pro_picture{
             display: flex;
             flex-direction: column;
@@ -449,10 +449,8 @@ main{
                     &:hover{
                     box-shadow: rgba(223, 188, 125,0.6) 0px 10px 15px -3px,  rgba(223, 188, 125,0.6) 0px 4px 6px -2px;
                 }
-            }
-           
-            
-         h4{
+            }      
+             h4{
                 font-family: primary;
                 font-weight: bold;
                 font-size: 1.1rem;
@@ -460,10 +458,8 @@ main{
                 text-transform: capitalize; 
                 color: #b66662;
                 padding: 10px 0px;
-            }
-           
+            }          
            }
-
            .pro_estheticienne{
 
             h3{
@@ -511,7 +507,6 @@ main{
         
              }
         }
-    
        .pro_coaching{
     
         img{
@@ -572,12 +567,9 @@ main{
         }        
             
          }
-    }
+        }
   
-  
-
 }
-
          }       
     }
     section.client{ 
@@ -635,10 +627,11 @@ main{
             }    
         }
     }     
-.slider{
+    .slider{
     display: flex;
      overflow: hidden;
      margin-top: 20px;
+     z-index: 100;
    
       
     .slide-track{
@@ -760,7 +753,7 @@ footer{
 
     .footer_content{
             padding: 40px 0px;
-        
+
             .footer_header{
                 display: flex;
                 justify-content: space-around;
@@ -774,34 +767,75 @@ footer{
                 }
                 }
                 .footer_univers{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px 0px;
+                     text-transform: capitalize;
+                    
+                    h5{
+                        text-align: center;
+                        font-family: primary;
+                        font-weight: bold;
+                       
+                        color: rgb(0, 0, 0);
+                        font-size: 1rem;
+                    }  
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-transform: capitalize;
+                        padding: 0;
+    
+                        a{ font-family: primary;
+                            color:#000000;
+                            font-size: 0.8rem;
+                            font-weight: lighter;
+                            padding: 4px 5px ;
+                            -webkit-text-decoration:none ;
+                                    text-decoration:none ;
+                        } 
+                        
+                    }
+                    
+                }
+                .conseil{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     padding: 10px 0px;
                      text-transform: capitalize;
                     
                     h5{
                         font-family: primary;
                         font-weight: bold;
-                       
                         color: rgb(0, 0, 0);
-                        font-size: 1.2rem;
-                    }       
-                }
-                .footer_nav{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    text-transform: capitalize;
-
-                    a{ font-family: primary;
-                        color:#000000;
-                        font-size: 0.9rem;
-                        font-weight: lighter;
-                        padding: 4px 5px ;
-                        -webkit-text-decoration:none ;
-                                text-decoration:none ;
-                    } 
-                    
-                }
+                        font-size: 1rem;
+                        
+                    }
+                     ul{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-transform: capitalize;
+                        padding: 0;
+    
+                        a{ font-family: primary;
+                            color:#000000;
+                            font-size: 0.8rem;
+                            font-weight: lighter;
+                            padding: 4px 5px ;
+                            -webkit-text-decoration:none ;
+                                    text-decoration:none ;
+                        } 
+                        
+                    }
+                }   
                 .footer_cadeaux_shopping{
                     padding: 10px 0px;
                     text-transform: capitalize;
@@ -810,26 +844,27 @@ footer{
                         font-family: primary;
                         font-weight: bold;
                         color: rgb(0, 0, 0);
-                        font-size: 1.2rem;
-                        
+                        font-size: 1rem;   
                     }
-
-                    .footer_item{
+                     ul{
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        align-items:center;
-                        
-                          a{ font-family: primary;
-                        color:#000000;
-                        font-size: 0.9rem;
-                        font-weight: lighter;
-                        padding: 4px 5px ;
-                        -webkit-text-decoration:none ;
-                                text-decoration:none ;
-                    } 
+                        align-items: center;
+                        text-transform: capitalize;
+                        padding: 0;
     
+                        a{ font-family: primary;
+                            color:#000000;
+                            font-size: 0.8rem;
+                            font-weight: lighter;
+                            padding: 4px 5px ;
+                            -webkit-text-decoration:none ;
+                                    text-decoration:none ;
+                        } 
+                        
                     }
+                    
                 }
             }
             .footer_contact{
@@ -839,55 +874,65 @@ footer{
                 align-items: center;
                 padding: 10px 0px;
                  text-transform: capitalize;
-                
-                .contatez_nous{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
 
-                    h5{
-                        font-family: primary;
-                        font-weight: bold;
-                        color: rgb(0, 0, 0);
-                        font-size: 1.2rem;
+                 h5{
+                    text-align: center;
+                    font-family: primary;
+                    font-weight: bold;
+                    color: rgb(0, 0, 0);
+                    font-size: 1rem;
+                }
+                
+              ul{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-transform: capitalize;
+                        padding: 0;
+    
+                        a{ font-family: primary;
+                            color:#000000;
+                            font-size: 0.8rem;
+                            font-weight: lighter;
+                            padding: 4px 5px ;
+                            -webkit-text-decoration:none ;
+                                    text-decoration:none ;
+                        } 
+                        
                     }
                     
-                    a{ font-family: primary;
-                        color:#000000;
-                        font-size: 0.9rem;
-                        font-weight: lighter;
-                        padding: 4px 5px ;
-                        -webkit-text-decoration:none ;
-                                text-decoration:none ;
-                    } 
-                }
                 .suivez-nous{
                     display: flex;
+                    flex-direction: column;
                     justify-content: space-around;
                     align-items: center;
 
                      h5{
+                        text-align: center;
                         font-family: primary;
                         font-weight: bold;
                         color: rgb(0, 0, 0);
-                        font-size: 1.2rem;
+                        font-size: 1rem;
+                    }     
+                      ul{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        text-transform: capitalize;
+                        padding: 0;
+    
+                        a{ font-family: primary;
+                            color:#000000;
+                            font-size: 1.5rem;
+                            font-weight: lighter;
+                            padding: 4px 5px ;
+                            -webkit-text-decoration:none ;
+                                    text-decoration:none ;
+                        } 
+                        
                     }
-                    
-                    a{ font-family: primary;
-                        color:#000000;
-                        font-size: 0.9rem;
-                        font-weight: lighter;
-                        padding: 4px 5px ;
-                        -webkit-text-decoration:none ;
-                                text-decoration:none ;
-                                
-                                i{
-                                    margin: 8px 3px;
-                                    font-size: 1.5rem;
-                                    color: rgb(0, 0, 0);
-                                }
-                    } 
                 }
             }
             .footer_mentions{
