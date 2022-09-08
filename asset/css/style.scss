@@ -1,10 +1,13 @@
 
+@import '../css/variable';
+@import '../css/mixin';
+@import '../css/setting';
+
 // font- family //
 @font-face {
     font-family: primary;
     src: url(../font/WorkSans-Regular.ttf);
 }
-
 
 @font-face {
     font-family: secondary;
@@ -12,11 +15,12 @@
 }
 @font-face {
     font-family: special;
-    src: url(../asset/font/MikelaLight.ttf);
+    src: url(../font/MikelaLight.ttf);
 }
 
 html{
     scroll-behavior: smooth;
+    font-size: 100%;
 }
 
 body{
@@ -29,6 +33,7 @@ body{
 
 header{ 
     background-color: #fff;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     position:-webkit-sticky; 
     position:sticky;
     top: 0px;
@@ -62,7 +67,7 @@ header{
                     text-decoration: none;
                     
                     &:hover{
-                        color:#ba716d; 
+                        color: #ba716d;
                         transition: 0.5s;
                     }
                 }   
@@ -114,7 +119,8 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:55%;
-    background-color:#464646 ;
+    background-color:#464646;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     width: 100%;
     min-height: 100vh;
 
@@ -144,8 +150,7 @@ main{
             justify-content: center;
           
             margin-top: 100px;
-           
-            
+                 
              h1{
                  font-family: special;
                  color: #404041;
@@ -193,15 +198,16 @@ main{
    section.conseil{
     min-height: 350px;
     margin-top: 40px;
-      
+    
     .conseil_content{
         h2{ 
-            font-family: secondary;
-            font-size: 3.5rem;
+            font-family: special;
+            font-size: 3rem;
             font-weight:lighter;
+            letter-spacing: 0.18rem;
             text-align:center;
             color: #b66662;
-            padding: 50px 0px 20px 0px;
+            padding: 20px 0px;
             
 
             &::before{
@@ -231,6 +237,7 @@ main{
              }
 
              p{
+                font-family: primary;
                 font-size:0.9rem;
              }
              .univers_beaute{
@@ -281,17 +288,17 @@ main{
    }
     section.beaute {
         background-color:rgba(234,223,229,0.4);
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
         min-height: 650px;
-        margin-top: 40px;
-        
+    
         .beaute_content{
-            h2{ font-family: secondary;
-                font-size: 3.5rem;
+            h2{ font-family: special;
+                font-size: 3rem;
                 font-weight:lighter;
+                letter-spacing: 0.18rem;
                 text-align:center;
                 color: #b66662;
-                margin: 0px 0px 5px;
-                 padding: 30px 0px;
+                padding-top: 20px;
                  
                  &::before{
                     content: ' - ';
@@ -313,6 +320,7 @@ main{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        padding-bottom: 20px;
 
         a{
             border-radius: 15px;
@@ -402,14 +410,14 @@ main{
        }
     }
     section.pro{
-         min-height: 350px;
-        margin-top: 40px;
+        min-height: 350px;
         .pro_content{
 
     h2{ 
-        font-family: secondary;
-        font-size: 3.5rem;
+        font-family: special;
+        font-size: 3rem;
         font-weight:lighter;
+        letter-spacing: 0.18rem;
         text-align:center;
         color: #b66662;
         padding: 30px 0px 30px 0px; 
@@ -573,17 +581,17 @@ main{
          }       
     }
     section.client{ 
-    min-height: 350px;
-    margin-top: 40px;
+    min-height: 400px;
     .client_content{
         background-color:rgba(234,223,229,0.2);
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     }
     .confiance{
         h2{ 
-            font-family: secondary;
-            font-size: 3.5rem;
+            font-family: special;
+            font-size: 3rem;
             font-weight:lighter;
+            letter-spacing: 0.18rem;
             color: #b66662;
             padding: 30px 0px 10px; 
             margin: 0px 0px 8px 0px; 
@@ -603,28 +611,9 @@ main{
             }
         }
         p{
-            font-family: special;
-            font-weight:lighter;
-            font-size: 1.8rem;
-        }
-        .btn-l{
             font-family: primary;
-            font-size: 1rem;
-            letter-spacing: 0.1rem;
-             padding: 8px 16px;
-             background-color: #b66662;
-             color: #ffffff;
-             text-decoration: none;
-             border: none;
-             border-radius: 5px;
-             margin-top: 5px;
-             
-             &:hover{
-                background-color:#d2c8cd;
-                box-shadow: rgba(223, 188, 125,0.6) 0px 5px 10px -3px,  rgba(223, 188, 125,0.6) 0px 4px 6px -2px;
-               font-weight: bolder;  
-               color: #b66662;    
-            }    
+            font-weight:lighter;
+            font-size: 1.2rem;
         }
     }     
     .slider{
@@ -651,16 +640,36 @@ main{
         }
     }
 
-}
+    }
+    .btn-l{
+        display: block;
+        font-family: primary;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+         padding: 8px 16px;
+         background-color: #b66662;
+         color: #ffffff;
+         text-decoration: none;
+         border: none;
+         border-radius: 5px;
+         margin: 15px auto;
+         
+         &:hover{
+            background-color:#d2c8cd;
+            box-shadow: rgba(223, 188, 125,0.6) 0px 5px 10px -3px,  rgba(223, 188, 125,0.6) 0px 4px 6px -2px;
+           font-weight: bolder;  
+           color: #b66662;    
+        }    
+    }
     }
     section.cadeaux_shopping{
     min-height: 350px;
-    margin-top: 40px;
-    
+  
     h2{ 
-        font-family: secondary;
-        font-size: 3.5rem;
+        font-family: special;
+        font-size: 3rem;
         font-weight:lighter;
+        letter-spacing: 0.18rem;
         color: #b66662;
         padding: 40px 0px 10px; 
         margin: 0px 0px 8px 0px; 
@@ -745,7 +754,6 @@ main{
     }     
     }
  }
-
 footer{
      background-color:rgba(234,223,229,0.4);
     min-height:200px;

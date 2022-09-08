@@ -8,10 +8,11 @@
 }
 @font-face {
   font-family: special;
-  src: url(../asset/font/MikelaLight.ttf);
+  src: url(../font/MikelaLight.ttf);
 }
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
 
 header {
   background-color: #fff;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -96,6 +98,7 @@ main section.home {
   background-size: cover;
   background-position: 55%;
   background-color: #464646;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   width: 100%;
   min-height: 100vh;
 }
@@ -158,12 +161,13 @@ main section.conseil {
   margin-top: 40px;
 }
 main section.conseil .conseil_content h2 {
-  font-family: secondary;
-  font-size: 3.5rem;
+  font-family: special;
+  font-size: 3rem;
   font-weight: lighter;
+  letter-spacing: 0.18rem;
   text-align: center;
   color: #b66662;
-  padding: 50px 0px 20px 0px;
+  padding: 20px 0px;
 }
 main section.conseil .conseil_content h2::before {
   content: " - ";
@@ -188,6 +192,7 @@ main section.conseil .conseil_content .conseil_items_content h3 {
   text-align: center;
 }
 main section.conseil .conseil_content .conseil_items_content p {
+  font-family: primary;
   font-size: 0.9rem;
 }
 main section.conseil .conseil_content .conseil_items_content .univers_beaute {
@@ -231,17 +236,17 @@ main section.conseil .conseil_content .conseil_items_content .btn-l a {
 }
 main section.beaute {
   background-color: rgba(234, 223, 229, 0.4);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   min-height: 650px;
-  margin-top: 40px;
 }
 main section.beaute .beaute_content h2 {
-  font-family: secondary;
-  font-size: 3.5rem;
+  font-family: special;
+  font-size: 3rem;
   font-weight: lighter;
+  letter-spacing: 0.18rem;
   text-align: center;
   color: #b66662;
-  margin: 0px 0px 5px;
-  padding: 30px 0px;
+  padding-top: 20px;
 }
 main section.beaute .beaute_content h2::before {
   content: " - ";
@@ -259,6 +264,7 @@ main section.beaute .beaute_items {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 main section.beaute .beaute_items a {
   border-radius: 15px;
@@ -330,12 +336,12 @@ main section.beaute .beaute_items a h3 .domicile:hover {
 }
 main section.pro {
   min-height: 350px;
-  margin-top: 40px;
 }
 main section.pro .pro_content h2 {
-  font-family: secondary;
-  font-size: 3.5rem;
+  font-family: special;
+  font-size: 3rem;
   font-weight: lighter;
+  letter-spacing: 0.18rem;
   text-align: center;
   color: #b66662;
   padding: 30px 0px 30px 0px;
@@ -473,17 +479,17 @@ main section.pro .pro_content .pro_items .pro_coaching .btn-l:hover {
   color: #b66662;
 }
 main section.client {
-  min-height: 350px;
-  margin-top: 40px;
+  min-height: 400px;
 }
 main section.client .client_content {
   background-color: rgba(234, 223, 229, 0.2);
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
 }
 main section.client .confiance h2 {
-  font-family: secondary;
-  font-size: 3.5rem;
+  font-family: special;
+  font-size: 3rem;
   font-weight: lighter;
+  letter-spacing: 0.18rem;
   color: #b66662;
   padding: 30px 0px 10px;
   margin: 0px 0px 8px 0px;
@@ -501,27 +507,9 @@ main section.client .confiance h2::after {
   color: #b66662;
 }
 main section.client .confiance p {
-  font-family: special;
-  font-weight: lighter;
-  font-size: 1.8rem;
-}
-main section.client .confiance .btn-l {
   font-family: primary;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  padding: 8px 16px;
-  background-color: #b66662;
-  color: #ffffff;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  margin-top: 5px;
-}
-main section.client .confiance .btn-l:hover {
-  background-color: #d2c8cd;
-  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
-  font-weight: bolder;
-  color: #b66662;
+  font-weight: lighter;
+  font-size: 1.2rem;
 }
 main section.client .slider {
   display: flex;
@@ -543,14 +531,33 @@ main section.client .slider .slide-track .slide {
   height: 300px;
   width: 250px;
 }
+main section.client .btn-l {
+  display: block;
+  font-family: primary;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 8px 16px;
+  background-color: #b66662;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin: 15px auto;
+}
+main section.client .btn-l:hover {
+  background-color: #d2c8cd;
+  box-shadow: rgba(223, 188, 125, 0.6) 0px 5px 10px -3px, rgba(223, 188, 125, 0.6) 0px 4px 6px -2px;
+  font-weight: bolder;
+  color: #b66662;
+}
 main section.cadeaux_shopping {
   min-height: 350px;
-  margin-top: 40px;
 }
 main section.cadeaux_shopping h2 {
-  font-family: secondary;
-  font-size: 3.5rem;
+  font-family: special;
+  font-size: 3rem;
   font-weight: lighter;
+  letter-spacing: 0.18rem;
   color: #b66662;
   padding: 40px 0px 10px;
   margin: 0px 0px 8px 0px;
