@@ -1,12 +1,23 @@
 {
   "name": "loe-application-web",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./main.scss:./style.css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akojm/Ile-Ore_Esthetique.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akojm/Ile-Ore_Esthetique/issues"
+  },
+  "homepage": "https://github.com/akojm/Ile-Ore_Esthetique#readme",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
 }
